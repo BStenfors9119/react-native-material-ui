@@ -9,13 +9,12 @@ import {
   TouchableWithoutFeedback,
 } from 'react-native';
 import React, { PureComponent } from 'react';
-// import PropTypes from 'prop-types';
-import * as PropTypes from 'deprecated-react-native-prop-types';
+import PropTypes from 'prop-types';
+import {TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
 import Color from 'color';
 
 import withTheme from '../styles/withTheme';
-import { ViewPropTypes } from '../utils';
 import { ELEVATION_ZINDEX } from '../styles/constants';
 import Icon from '../Icon';
 
@@ -61,7 +60,7 @@ const propTypes = {
   style: PropTypes.oneOfType([
     PropTypes.shape({
       container: ViewPropTypes.style,
-      icon: Text.propTypes.style, // eslint-disable-line
+      icon: TextPropTypes.style, // eslint-disable-line
     }),
     PropTypes.array,
   ]),
