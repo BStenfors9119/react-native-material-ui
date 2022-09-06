@@ -2,7 +2,8 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Animated, Easing, StyleSheet, Text, View } from 'react-native';
-import { ViewPropTypes, BackAndroid } from '../utils';
+import { BackAndroid } from '../utils';
+import {TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
 import LeftElement from './LeftElement.react';
 import CenterElement from './CenterElement.react';
@@ -69,7 +70,7 @@ const propTypes = {
     // FIXME
     leftElement: PropTypes.any, // eslint-disable-line
     centerElementContainer: ViewPropTypes.style,
-    titleText: Text.propTypes.style, // eslint-disable-line
+    titleText: TextPropTypes.style, // eslint-disable-line
     rightElementContainer: ViewPropTypes.style,
     rightElement: PropTypes.any, // eslint-disable-line
   }),

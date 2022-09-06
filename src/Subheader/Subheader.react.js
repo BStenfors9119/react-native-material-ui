@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
-import { ViewPropTypes } from '../utils';
+import {TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 import withTheme from '../styles/withTheme';
 
 const propTypes = {
@@ -12,7 +12,7 @@ const propTypes = {
   lines: PropTypes.number,
   style: PropTypes.shape({
     container: ViewPropTypes.style,
-    text: Text.propTypes.style, // eslint-disable-line
+    text: TextPropTypes.style, // eslint-disable-line
   }),
 };
 const defaultProps = {

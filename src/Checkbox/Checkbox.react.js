@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
 import IconToggle from '../IconToggle';
 import RippleFeedback from '../RippleFeedback';
-import { ViewPropTypes } from '../utils';
+import {TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 import withTheme from '../styles/withTheme';
 
 const propTypes = {
@@ -45,7 +45,7 @@ const propTypes = {
     container: ViewPropTypes.style,
     // FIXME:
     icon: PropTypes.any, // eslint-disable-line
-    label: Text.propTypes.style, // eslint-disable-line
+    label: TextPropTypes.style, // eslint-disable-line
   }),
   /**
    * Size of icon

@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 // import PropTypes from 'prop-types';
 import * as PropTypes from 'deprecated-react-native-prop-types';
-import { ViewPropTypes } from '../utils';
+import {TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
 import Icon from '../Icon';
 import IconToggle from '../IconToggle';
@@ -76,7 +76,7 @@ const propTypes = {
    */
   style: PropTypes.shape({
     container: ViewPropTypes.style,
-    icon: Text.propTypes.style, // eslint-disable-line
+    icon: TextPropTypes.style, // eslint-disable-line
   }),
 };
 const defaultProps = {

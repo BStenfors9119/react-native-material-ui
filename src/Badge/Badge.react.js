@@ -2,9 +2,9 @@
 import { Text, View } from 'react-native';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import {TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
 import Icon from '../Icon';
-import { ViewPropTypes } from '../utils';
 import withTheme from '../styles/withTheme';
 
 const propTypes = {
@@ -42,7 +42,7 @@ const propTypes = {
     PropTypes.shape({
       container: ViewPropTypes.style,
       strokeContainer: ViewPropTypes.style,
-      content: Text.propTypes.style, // eslint-disable-line
+      content: TextPropTypes.style, // eslint-disable-line
     }),
     PropTypes.array,
   ]),

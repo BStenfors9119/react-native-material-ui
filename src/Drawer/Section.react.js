@@ -6,7 +6,7 @@ import { View, Text } from 'react-native';
 import Subheader from '../Subheader';
 import Divider from '../Divider';
 import ListItem from '../ListItem';
-import { ViewPropTypes } from '../utils';
+import {TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 import withTheme from '../styles/withTheme';
 
 const propTypes = {
@@ -28,9 +28,9 @@ const propTypes = {
     container: ViewPropTypes.style,
     item: ViewPropTypes.style,
     subheader: ViewPropTypes.style,
-    icon: Text.propTypes.style, // eslint-disable-line
-    value: Text.propTypes.style, // eslint-disable-line
-    label: Text.propTypes.style, // eslint-disable-line
+    icon: TextPropTypes.style, // eslint-disable-line
+    value: TextPropTypes.style, // eslint-disable-line
+    label: TextPropTypes.style, // eslint-disable-line
   }),
   key: PropTypes.string,
   /**

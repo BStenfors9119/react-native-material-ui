@@ -1,8 +1,8 @@
 /* eslint-disable import/no-unresolved, import/extensions */
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import {TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 import { View, Text, StyleSheet, Image } from 'react-native';
-import { ViewPropTypes } from '../utils';
 /* eslint-enable import/no-unresolved, import/extensions */
 import Icon from '../Icon';
 import withTheme from '../styles/withTheme';
@@ -37,7 +37,7 @@ const propTypes = {
    */
   style: PropTypes.shape({
     container: ViewPropTypes.style,
-    content: Text.propTypes.style, // eslint-disable-line
+    content: TextPropTypes.style, // eslint-disable-line
   }),
   iconSet: PropTypes.string,
   /**

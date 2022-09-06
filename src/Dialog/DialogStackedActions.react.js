@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { View } from 'react-native';
 /* eslint-enable import/no-unresolved, import/extensions */
 import Button from '../Button';
-import { ViewPropTypes } from '../utils';
+import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 import withTheme from '../styles/withTheme';
 
 const propTypes = {

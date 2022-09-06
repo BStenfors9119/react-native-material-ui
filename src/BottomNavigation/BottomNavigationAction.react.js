@@ -2,7 +2,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, View, Text } from 'react-native';
-import { ViewPropTypes } from '../utils';
+import {TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
 import withTheme from '../styles/withTheme';
 
@@ -38,8 +38,8 @@ const propTypes = {
    */
   style: PropTypes.shape({
     container: ViewPropTypes.style,
-    active: Text.propTypes.style, // eslint-disable-line
-    disabled: Text.propTypes.style, // eslint-disable-line
+    active: TextPropTypes.style, // eslint-disable-line
+    disabled: TextPropTypes.style, // eslint-disable-line
   }),
   disabled: PropTypes.bool,
 };

@@ -8,7 +8,7 @@ import {
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import { ViewPropTypes } from '../utils';
+import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 import withTheme from '../styles/withTheme';
 
 import Button from '../Button';

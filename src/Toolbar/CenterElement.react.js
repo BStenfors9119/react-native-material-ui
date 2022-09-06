@@ -9,7 +9,7 @@ import {
   Easing,
 } from 'react-native';
 /* eslint-enable import/no-unresolved, import/extensions */
-import { ViewPropTypes } from '../utils';
+import {TextPropTypes, TextInputPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 import withTheme from '../styles/withTheme';
 
 const propTypes = {
@@ -17,7 +17,7 @@ const propTypes = {
   searchValue: PropTypes.string.isRequired,
   searchable: PropTypes.shape({
     autoFocus: PropTypes.bool,
-    autoCapitalize: TextInput.propTypes.autoCapitalize, // eslint-disable-line
+    autoCapitalize: TextInputPropTypes.autoCapitalize, // eslint-disable-line
     autoCorrect: PropTypes.bool,
     onChangeText: PropTypes.func,
     onSubmitEditing: PropTypes.func,
@@ -25,7 +25,7 @@ const propTypes = {
   }),
   style: PropTypes.shape({
     centerElementContainer: ViewPropTypes.style,
-    titleText: Text.propTypes.style, // eslint-disable-line
+    titleText: TextPropTypes.style, // eslint-disable-line
   }),
   centerElement: PropTypes.node,
   onPress: PropTypes.func,

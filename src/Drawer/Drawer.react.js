@@ -2,7 +2,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { ScrollView } from 'react-native';
-import { ViewPropTypes } from '../utils';
+import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
 import Container from '../Container';
 import withTheme from '../styles/withTheme';

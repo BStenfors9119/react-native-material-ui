@@ -2,7 +2,7 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { ViewPropTypes } from '../utils';
+import {TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
 import Icon from '../Icon';
 import RippleFeedback from '../RippleFeedback';
@@ -50,7 +50,7 @@ const propTypes = {
    */
   style: PropTypes.shape({
     container: ViewPropTypes.style,
-    text: Text.propTypes.style, // eslint-disable-line
+    text: TextPropTypes.style, // eslint-disable-line
   }),
   primary: PropTypes.bool,
   accent: PropTypes.bool,

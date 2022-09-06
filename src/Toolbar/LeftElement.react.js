@@ -3,7 +3,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Animated, Easing, StyleSheet, Text } from 'react-native';
 /* eslint-enable import/no-unresolved, import/extensions */
-import { ViewPropTypes } from '../utils';
+import {TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 import withTheme from '../styles/withTheme';
 
 import IconToggle from '../IconToggle';
@@ -13,7 +13,7 @@ const propTypes = {
   isSearchActive: PropTypes.bool.isRequired,
   style: PropTypes.shape({
     leftElementContainer: ViewPropTypes.style,
-    leftElement: Text.propTypes.style, // eslint-disable-line
+    leftElement: TextPropTypes.style, // eslint-disable-line
   }),
   size: PropTypes.number,
   leftElement: PropTypes.node,

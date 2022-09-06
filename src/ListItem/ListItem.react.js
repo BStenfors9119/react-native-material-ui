@@ -10,7 +10,7 @@ import {
   findNodeHandle,
 } from 'react-native';
 /* eslint-enable import/no-unresolved, import/extensions */
-import { ViewPropTypes } from '../utils';
+import {TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';;
 import withTheme from '../styles/withTheme';
 
 import Divider from '../Divider';
@@ -43,11 +43,11 @@ const propTypes = {
     leftElementContainer: ViewPropTypes.style,
     centerElementContainer: ViewPropTypes.style,
     textViewContainer: ViewPropTypes.style,
-    primaryText: Text.propTypes.style, // eslint-disable-line
+    primaryText: TextPropTypes.style, // eslint-disable-line
     firstLine: ViewPropTypes.style,
-    primaryTextContainer: Text.propTypes.style, // eslint-disable-line
-    secondaryText: Text.propTypes.style, // eslint-disable-line
-    tertiaryText: Text.propTypes.style, // eslint-disable-line
+    primaryTextContainer: TextPropTypes.style, // eslint-disable-line
+    secondaryText: TextPropTypes.style, // eslint-disable-line
+    tertiaryText: TextPropTypes.style, // eslint-disable-line
     rightElementContainer: ViewPropTypes.style,
     leftElement: PropTypes.style,
     rightElement: PropTypes.style,

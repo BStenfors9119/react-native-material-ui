@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 /* eslint-enable import/no-unresolved, import/extensions */
 import Color from 'color';
-import { ViewPropTypes } from '../utils';
+import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 import { black } from '../styles/colors';
 import { ELEVATION_ZINDEX } from '../styles/constants';
 
