@@ -9,7 +9,8 @@ import {
   TouchableWithoutFeedback,
 } from 'react-native';
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+import * as PropTypes from 'deprecated-react-native-prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
 import Color from 'color';
 

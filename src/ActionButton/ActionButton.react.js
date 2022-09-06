@@ -9,7 +9,8 @@ import {
   TouchableWithoutFeedback,
   Animated,
 } from 'react-native';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+import * as PropTypes from 'deprecated-react-native-prop-types';
 import { ViewPropTypes } from '../utils';
 /* eslint-enable import/no-unresolved, import/extensions */
 import Icon from '../Icon';
