@@ -40,7 +40,7 @@
     "deprecated-react-native-prop-types": "^2.3.0",
     "hoist-non-react-statics": "^2.5.5",
     "lodash.merge": "^4.0.0",
-    "prop-types": "^15.5.10",
+    "prop-types": "^15.8.1",
     "react-native-material-design-styles": "^0.2.6"
   },
   "devDependencies": {
