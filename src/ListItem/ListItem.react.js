@@ -279,11 +279,11 @@ class ListItem extends PureComponent {
     }
   };
 
-  onRightElementPressed = () => {
-    const { onRightElementPress, onPressValue } = this.props;
+  onRightElementPressed = action => {
+    const { onRightElementPress } = this.props;
 
     if (onRightElementPress) {
-      onRightElementPress(onPressValue);
+      onRightElementPress(action);
     }
   };
 
