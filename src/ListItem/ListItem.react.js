@@ -49,8 +49,8 @@ const propTypes = {
     secondaryText: TextPropTypes.style, // eslint-disable-line
     tertiaryText: TextPropTypes.style, // eslint-disable-line
     rightElementContainer: ViewPropTypes.style,
-    leftElement: PropTypes.style,
-    rightElement: PropTypes.style,
+    leftElement: ViewPropTypes.style,
+    rightElement: ViewPropTypes.style,
   }),
 
   // left side
