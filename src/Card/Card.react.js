@@ -45,7 +45,7 @@ class Card extends PureComponent {
     };
   }
 
-  componentWillReceiveProps(nextProps) {
+  static getDervivedStateFromProps(nextProps) {
     this.setState({ styles: getStyles(nextProps) });
   }
 
