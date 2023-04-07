@@ -191,7 +191,7 @@ class Toolbar extends PureComponent {
     };
   }
 
-  componentWillReceiveProps(nextProps) {
+  static getDervivedStateFromProps(nextProps) {
     const { isSearchActiveInternal } = this.state;
     const { isSearchActive, hidden } = this.props;
 

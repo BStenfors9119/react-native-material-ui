@@ -66,7 +66,7 @@ class BottomNavigation extends PureComponent {
     };
   }
 
-  componentWillReceiveProps(nextProps) {
+  static getDervivedStateFromProps(nextProps) {
     const { style, hidden } = this.props;
 
     if (nextProps.style !== style) {

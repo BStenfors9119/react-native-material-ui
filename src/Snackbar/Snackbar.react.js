@@ -119,7 +119,7 @@ class Snackbar extends PureComponent {
     this.move(bottomNavigation);
   }
 
-  componentWillReceiveProps(nextProps) {
+  static getDervivedStateFromProps(nextProps) {
     const { style, visible, bottomNavigation } = this.props;
 
     if (nextProps.style !== style) {
