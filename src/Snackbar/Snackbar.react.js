@@ -181,7 +181,7 @@ class Snackbar extends PureComponent {
 
     const toValue = bottomNavigation ? StyleSheet.flatten(container).height : 0;
 
-    this.setState({ bottomPosition: toValue });
+    this.state = {...this.state, bottomPosition: toValue };
   };
 
   renderAction = () => {
