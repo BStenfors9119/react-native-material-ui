@@ -109,9 +109,7 @@ class Snackbar extends PureComponent {
       styles,
       visible: props.visible,
     };
-  }
 
-  componentDidMount() {
     const { bottomNavigation, visible } = this.props;
 
     this.visibility = new Animated.Value(visible ? 1 : 0);
