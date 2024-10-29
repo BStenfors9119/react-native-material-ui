@@ -123,12 +123,12 @@ class Snackbar extends PureComponent {
     const { style, visible, bottomNavigation } = this.props;
 
     if (nextProps.style !== style) {
-      this.setState({ styles: getStyles(nextProps, this.context) });
+      this.state ={ ...this.state, styles: getStyles(nextProps, this.context) };
     }
 
     if (nextProps.visible !== visible) {
       if (nextProps.visible) {
-        this.setState({ visible: true });
+        this.state = { ...this.state, visible: true };
         this.setHideTimer(nextProps);
       }
 
@@ -136,7 +136,7 @@ class Snackbar extends PureComponent {
         toValue: nextProps.visible ? 1 : 0,
         duration: 300,
       }).start(() => {
-        this.setState({ visible: nextProps.visible });
+        this.state = {...this.state, visible: nextProps.visible };
       });
     }
 
