@@ -109,7 +109,9 @@ class Snackbar extends PureComponent {
       styles,
       visible: props.visible,
     };
+  }
 
+  componentDidMount() {
     const { bottomNavigation, visible } = this.props;
 
     this.visibility = new Animated.Value(visible ? 1 : 0);
@@ -222,11 +224,17 @@ class Snackbar extends PureComponent {
     const { message, onPress } = this.props;
     const { styles, bottomPosition, visible } = this.state;
 
-    const containerStyle = {
-      opacity: this.visibility.interpolate({
+    let finalOpacity = 0;
+
+    if (this.visibility !== undefined) {
+      finalOpacity = this.visibility.interpolate({
         inputRange: [0, 1],
         outputRange: [0, 1],
-      }),
+      });
+    }
+
+    const containerStyle = {
+      opacity: finalOpacity,
     };
 
     const combinedStyle = [
